@@ -47,6 +47,22 @@
             </div>
         </div>
     </nav>
+    <div class="container text-center mb-4 mt-4">
+        <button id="cambio" onclick="cambioFondo()">Fondo Oscuro</button>
+        <button id="volver" onclick="volverFondo()">Fondo Claro</button>
+    </div>
+    <script>
+        function cambioFondo() {
+            let body = document.getElementsByTagName('body')[0];
+            body.style.backgroundColor = '#343a40';
+        }
+    </script>
+    <script>
+        function volverFondo() {
+            let body = document.getElementsByTagName('body')[0];
+            body.style.backgroundColor = '#fff';
+        }
+    </script>
     <main class="contenedor sombra">
 
         <h1>Proximamente</h1>

@@ -48,7 +48,7 @@
         </div>
     </nav>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide mb-4" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
                 <img src="img/Entrada_Molino.JPG" class="d-block w-100" alt="..." height="500">
@@ -61,6 +61,22 @@
             </div>
         </div>
     </div>
+    <div class="container text-center">
+        <button id="cambio" onclick="cambioFondo()">Fondo Oscuro</button>
+        <button id="volver" onclick="volverFondo()">Fondo Claro</button>
+    </div>
+    <script>
+        function cambioFondo() {
+            let body = document.getElementsByTagName('body')[0];
+            body.style.backgroundColor = '#343a40';
+        }
+    </script>
+    <script>
+        function volverFondo() {
+            let body = document.getElementsByTagName('body')[0];
+            body.style.backgroundColor = '#fff';
+        }
+    </script>
     <main>
 
         <section class="hero m-4">
@@ -81,8 +97,12 @@
                         placer de un buen descanso para usted y su familia. </p>
                 </div>
             </div>
+
         </section>
-        <section class="container-fluid d-flex justify-content-center">
+        
+
+
+        <section class="container-fluid d-flex justify-content-center mt-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="icons-g" width="44" height="44" viewBox="0 0 24 24"
                 stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -228,12 +248,13 @@
                 <div class="row">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="cont-icon" width="25" height="25" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cont-icon" width="25" height="25"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        </svg>
                     </div>
                     <div class="col-sm-8">
                         <p class="fw-bold">Telefono: (45) 2 72727272</p>
@@ -242,11 +263,12 @@
                 <div class="row">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="cont-icon" width="25" height="25" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cont-icon" width="25" height="25"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
                     </div>
                     <div class="col-sm-8">
                         <p class="fw-bold">Facebook: xDxDxDxDxDxD</p>
@@ -255,13 +277,14 @@
                 <div class="row">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="cont-icon" width="25" height="25" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                        <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cont-icon" width="25" height="25"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
                     </div>
                     <div class="col-sm-8">
                         <p class="fw-bold">Instagram: @jfjfjfjfjfjf</p>

@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/LogoPag.png" type="imagen/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="miscript.js"></script>
     <title>El Molino Suyay</title>
 </head>
 
@@ -47,6 +49,40 @@
             </div>
         </div>
     </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/Playa_1.jpg" class="d-block w-100" alt="..." height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Lago_Atardecer.jpg" class="d-block w-100" alt="..." height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Ortencias_2.jpg" class="d-block w-100" alt="..." height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Ortencias_1.jpg" class="d-block w-100" alt="..." height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Playa_4.jpg" class="d-block w-100" alt="..." height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Playa_5.jpg" class="d-block w-100" alt="..." height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Playa_3.jpg" class="d-block w-100" alt="..." height="500">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center border border-dark p-4">
+        <form>
+            <p class="fs-2">Envianos tu Email:</p>
+            <input id='email'>
+            <button type='submit' id='valida'>Enviar!</button>
+        </form>
+        <h2 id='result'></h2>
+    </div>
+
     <section>
         <div>
             <h1 class="container text-center">"El placer de un buen descanso"</h1>
